@@ -1,3 +1,4 @@
+(function(){
 "use strict";
 var userFeed = new Instafeed({
         get: 'user',
@@ -9,3 +10,4 @@ var userFeed = new Instafeed({
         template: '<div class="photo"><a href="{{image}}"><div class="img-container"><div class="img-backdrop"><img src="{{image}}" class="img-responsive"></div><div class="description-container"><p class="caption">{{caption}}</p> <span class="likes"><i class="icon ion-heart">&#9829; </i> {{likes}}</span><span class="comments"><i class="icon ion-chatbubble">&#9998; </i>{{comments}}</span></div></div></a></div>',
       });
     userFeed.run();
+    })();   

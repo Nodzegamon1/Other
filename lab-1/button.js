@@ -1,3 +1,5 @@
+(function(){
+
 "use strict";
 var loadButton = document.getElementById('load-more');
       var feed = new Instafeed({
@@ -11,3 +13,4 @@ var loadButton = document.getElementById('load-more');
     userFeed.next();
   }); 
  userFeed.run();
+})();
