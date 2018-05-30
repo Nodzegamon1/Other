@@ -1,4 +1,0 @@
-@mixin background($color){
-    background: $color;
-    border: 50px solid lighten($color: , $amount: 50px)
-}
