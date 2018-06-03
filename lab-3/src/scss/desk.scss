@@ -1,0 +1,54 @@
+/* Для разрешения экрана > 1000px */
+
+
+@media (min-width: 1000px) {
+    
+    body {
+      padding: 0 20%;
+  
+      .content {
+  
+        .column {
+          .item {
+            background: black;
+            &:first-child {
+              background: black;
+              min-height: 20px;
+            }
+          }
+        }
+  
+        .main {
+          flex-basis: 50%;
+          width: 90%;
+  
+          .column {
+            .item {
+              display: inline-flex;
+            }
+          }
+          .main-item {
+            flex-direction: row-reverse;
+          }
+  
+          .item {
+  
+            &:nth-child(2) {
+              flex: 2;
+  
+              .item-img {
+                flex: 1;
+                background: url("https://picsum.photos/1920/800") no-repeat;
+                background-size: cover;
+                height: 200px;
+              }
+            }
+  
+            &:nth-child(3) {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }

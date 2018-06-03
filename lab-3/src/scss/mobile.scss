@@ -1,0 +1,93 @@
+/* Для разрешения экрана < 800px */
+
+@media (max-width: 800px) {
+    body {
+      padding: 5px;
+  
+      header {
+        padding: 5px;
+  
+        h1 {
+          font-size: 10pt;
+        }
+      }
+  
+      nav {
+        flex-direction: column;
+  
+        .space {
+          display: none;
+        }
+  
+        .nav-point {
+          padding-left: 5px;
+          text-align: left;
+          margin-bottom: 2px;
+  
+          &:last-child {
+            order: -1;
+            margin-bottom: .5em;
+          }
+        }
+      }
+  
+      .content {
+        .item {
+          margin-bottom: 5px;
+        }
+  
+        .column {
+          .item:first-child {
+            .item-img {
+              flex: 1;
+              background: url("https://picsum.photos/1920/800") no-repeat;
+              background-size: cover;
+              height:85vw;
+            }
+          }
+        }
+  
+        .main {
+          .item {
+            &:first-child {
+              .item-img {
+                background: url("https://picsum.photos/1000/700/") no-repeat;
+                background-size: cover;
+                height: 85vw;
+              }
+            }
+  
+            &:nth-child(3) {
+              .item-img {
+                background: url("https://picsum.photos/950/950/") no-repeat;
+                background-size: cover;
+                height: 85vw;
+              }
+            }
+          }
+  
+          .column {
+            .item {
+              &:first-child {
+                .item-img {
+                  background: url("https://picsum.photos/500/300/") no-repeat;
+                  background-size: cover;
+                }
+              }
+            }
+          }
+          .column {
+            .item {
+              &:first-child {
+                .item-img {
+                  background: url("https://picsum.photos/500/300/") no-repeat;
+                  background-size: cover;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }

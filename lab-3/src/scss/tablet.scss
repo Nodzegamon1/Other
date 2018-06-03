@@ -1,0 +1,41 @@
+/* Для разрешения экрана от 800px до 1000px */
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    body {
+      padding: 0 2%;
+  
+      .content {
+        .column {
+          flex: 1;
+          width: 50%;
+  
+          .item {
+            &:first-child {
+              min-height: 30em;
+            }
+          }
+        }
+  
+        .main {
+          flex: 1;
+  
+          .main-item {
+            min-height: 30em;
+          }
+  
+          .item {
+            &:nth-child(2) {
+              flex: 1;
+  
+              .item-img {
+                flex: 1;
+                background: url("https://picsum.photos/950/950/") no-repeat;
+                background-size: cover;
+                height: 200px;
+              }
+             }
+          }
+        }
+      }
+    }
+  }
