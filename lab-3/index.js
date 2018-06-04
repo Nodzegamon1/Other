@@ -1,3 +1,3 @@
-import "scss/desk.scss";
-import "scss/mobele.scss";
-import "scss/tablet.scss";
+import "./scss/desk.scss";
+import "./scss/mobile.scss";
+import "./scss/tablet.scss";
