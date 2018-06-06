@@ -7,7 +7,7 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
     watch: true,
     entry: {
-        app: './src/index.js'
+        app: 'index.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

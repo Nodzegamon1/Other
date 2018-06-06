@@ -1,0 +1,20 @@
+
+body {
+    height: 100%;
+
+    background: #3cb371;
+
+    header {
+      text-align: center;
+      margin: 0 0 0 0;
+      color: white;
+       }
+
+    nav {
+        margin: -5px 0 0 -5px;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+     
+    }
+}

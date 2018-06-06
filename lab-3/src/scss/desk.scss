@@ -1,41 +1,48 @@
 /* Для разрешения экрана > 1000px */
-
-
 @media (min-width: 1000px) {
     
     body {
-      padding: 0 20%;
+      padding: 0 15%;
   
-      .content {
-  
-        .column {
-          .item {
-            background: black;
-            &:first-child {
-              background: black;
-              min-height: 20px;
-            }
-          }
-        }
-  
-        .main {
-          flex-basis: 50%;
-          width: 90%;
-  
+              .content {
+
           .column {
             .item {
-              display: inline-flex;
+              background: green;
+              background: url("https://picsum.photos/1000/700/?random") no-repeat;
+              background-size: cover;
+              height: 200px;
+              width: 200px;
+                 }
+                 &:first-child {
+                  background: green;
+                  background: url("https://picsum.photos/1000/1000/?random") no-repeat;
+                  background-size: cover;
+                  height: 500px;
+                  width: 830px;
+                }
+                
+          }
+       
+          .main {
+            flex-basis: 10%;
+            width: 100%;
+    
+            .column {
+              .item {
+                display: inline-flex;
+              }
+              
             }
-          }
-          .main-item {
-            flex-direction: row-reverse;
-          }
-  
-          .item {
-  
-            &:nth-child(2) {
-              flex: 2;
-  
+            .main-item {
+              flex-direction: row;
+              
+            }
+    
+            .item {
+                  &:nth-child(1) {
+                flex: 3;
+
               .item-img {
                 flex: 1;
                 background: url("https://picsum.photos/1920/800") no-repeat;
@@ -45,6 +52,22 @@
             }
   
             &:nth-child(3) {
+              flex: 1;
+            }
+          }
+          .item {
+                  &:nth-child(2) {
+                flex: 3;
+
+              .item-img {
+                flex: 1;
+                background: url("https://picsum.photos/1920/800") no-repeat;
+                background-size: cover;
+                height: 200px;
+              }
+            }
+  
+            &:nth-child(1) {
               flex: 1;
             }
           }
